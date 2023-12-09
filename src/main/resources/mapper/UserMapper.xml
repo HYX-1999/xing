@@ -15,4 +15,9 @@
         select a.id,a.username,a.role_id,a.status,b.nickname,b.avatar from b_user a left join (select id,nickname,avatar from b_user_info) b on a.user_info_id=b.id
         where a.id = #{id}
     </select>
+
+    <select id="selectNameAndPassword" resultType="com.blog.entity.User">
+        select a.id,a.username,a.role_id,a.status,b.nickname,b.avatar,a.user_info_id from b_user a left join (select id,nickname,avatar from b_user_info) b on a.user_info_id=b.id
+        where a.username=#{username} and a.password=#{password}
+    </select>
 </mapper>

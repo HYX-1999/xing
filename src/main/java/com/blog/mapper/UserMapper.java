@@ -15,6 +15,8 @@ public interface UserMapper extends BaseMapper<User> {
     void updateLoginInfo(@Param("loginId")Object loginId, @Param("ip") String ip, @Param("cityInfo")String cityInfo,
                          @Param("os") String os, @Param("browser") String browser);
 
+    User selectNameAndPassword(@Param("username") String username, @Param("password") String password);
+
     /**
      * 根据用户名查询
      */
