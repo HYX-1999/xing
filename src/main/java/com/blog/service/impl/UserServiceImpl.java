@@ -1,5 +1,6 @@
 package com.blog.service.impl;
 
+import cn.dev33.satoken.stp.StpUtil;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.blog.common.ResponseResult;
 import com.blog.entity.User;
@@ -9,6 +10,7 @@ import com.blog.exception.BusinessException;
 import com.blog.mapper.UserInfoMapper;
 import com.blog.mapper.UserMapper;
 import com.blog.model.dto.SystemUserDTO;
+import com.blog.model.vo.SystemUserVO;
 import com.blog.model.vo.UserInfoVO;
 import com.blog.service.UserService;
 import com.blog.utils.AesEncryptUtils;
@@ -35,5 +37,13 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         User user = User.builder().username(userDto.getUsername()).password(AesEncryptUtils.aesEncrypt(userDto.getPassword())).status(userDto.getStatus()).userInfoId(userInfo.getId()).roleId(userDto.getRoleId()).loginType(LoginTypeEnum.EMAIL.getType()).build();
         baseMapper.insert(user);
         return ResponseResult.ok();
+    }
+
+    /**
+     * 获取当前登录用户详情
+     */
+    @Override
+    public ResponseResult<SystemUserVO> getCurrentUserInfo() {
+        return ResponseResult.ok(baseMapper.getById(StpUtil.getLoginIdAsString()), "获取当前登录用户信息成功");
     }
 }

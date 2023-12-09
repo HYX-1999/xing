@@ -1,9 +1,11 @@
 package com.blog.controller;
 
+import cn.dev33.satoken.annotation.SaCheckLogin;
 import cn.dev33.satoken.annotation.SaCheckPermission;
 import com.blog.annotation.OperationLogger;
 import com.blog.common.ResponseResult;
 import com.blog.model.dto.SystemUserDTO;
+import com.blog.model.vo.SystemUserVO;
 import com.blog.service.UserService;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
@@ -26,4 +28,9 @@ public class UserController {
     public ResponseResult<?> insert(@RequestBody SystemUserDTO userDto) {
         return userService.insertUser(userDto);
     }
+
+    @PostMapping(value = "/getCurrentUserInfo")
+    @SaCheckLogin
+    @ApiOperation(value = "获取当前登录用户信息", httpMethod = "POST", response = ResponseResult.class, notes = "获取当前登录用户信息")
+    public ResponseResult<SystemUserVO> getCurrentUserInfo() { return userService.getCurrentUserInfo(); }
 }
