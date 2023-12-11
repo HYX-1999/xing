@@ -25,7 +25,7 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article> impl
 
     @Override
     public ResponseResult<Page<SystemArticleListVO>> selectArticleList(Map<String, Object> map) {
-        Page<SystemArticleListVO> data = baseMapper.selectArticle(new Page<>((Integer) map.get("pageNo"), (Integer) map.get("pageSize")), map);
+        Page<SystemArticleListVO> data = baseMapper.selectArticle(new Page<>((Integer) map.get("current"), (Integer) map.get("size")), map);
         data.getRecords().forEach(item -> {
             SystemUserVO userInfo = userMapper.getById(item.getUserId());
             item.setNickname(userInfo.getNickname());
