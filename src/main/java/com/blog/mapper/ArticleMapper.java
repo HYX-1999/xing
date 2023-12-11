@@ -5,9 +5,11 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.blog.entity.Article;
 import com.blog.model.vo.SystemArticleListVO;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 import java.util.Map;
 
+@Repository
 public interface ArticleMapper extends BaseMapper<Article> {
 
     /**
