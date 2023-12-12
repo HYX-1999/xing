@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37537fe2-8a9a-4915-a298-778634166633" name="更改" comment="feature: 文章列表接口">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/entity/Tags.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/mapper/TagsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/model/vo/SystemTagListVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/service/TagsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/service/impl/TagsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/TagsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/mapper/ArticleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/mapper/ArticleMapper.java" afterDir="false" />
+    <list default="true" id="37537fe2-8a9a-4915-a298-778634166633" name="更改" comment="feature: 文章列表接口修改">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/entity/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/mapper/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/model/vo/SystemCategoryListVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/CategoryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +24,9 @@
       <list>
         <option value="Enum" />
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="Interface" />
         <option value="spring-beans.schema" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -105,7 +106,8 @@
       <workItem from="1702088860877" duration="257000" />
       <workItem from="1702089224232" duration="4989000" />
       <workItem from="1702105634781" duration="8954000" />
-      <workItem from="1702262730949" duration="4397000" />
+      <workItem from="1702262730949" duration="5186000" />
+      <workItem from="1702347964445" duration="1001000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -139,7 +141,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702266526059</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feature: 标签列表接口">
+      <option name="closed" value="true" />
+      <created>1702267234194</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702267234194</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feature: 文章列表接口修改">
+      <option name="closed" value="true" />
+      <created>1702267287498</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702267287498</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +168,8 @@
     <MESSAGE value="feature: 登录模块" />
     <MESSAGE value="feature: 获取当前登录用户信息" />
     <MESSAGE value="feature: 文章列表接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature: 文章列表接口" />
+    <MESSAGE value="feature: 标签列表接口" />
+    <MESSAGE value="feature: 文章列表接口修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: 文章列表接口修改" />
   </component>
 </project>
