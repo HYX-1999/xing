@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37537fe2-8a9a-4915-a298-778634166633" name="更改" comment="feature: 文章列表接口修改">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/mapper/CategoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/model/vo/SystemCategoryListVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/CategoryMapper.xml" afterDir="false" />
+    <list default="true" id="37537fe2-8a9a-4915-a298-778634166633" name="更改" comment="feature: 分类列表接口">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/exception/GlobalException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/exception/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/exception/BusinessException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +103,14 @@
       <workItem from="1702089224232" duration="4989000" />
       <workItem from="1702105634781" duration="8954000" />
       <workItem from="1702262730949" duration="5186000" />
-      <workItem from="1702347964445" duration="1001000" />
+      <workItem from="1702347964445" duration="1670000" />
+      <workItem from="1702450189174" duration="2985000" />
+      <workItem from="1702551515089" duration="675000" />
+      <workItem from="1702605816539" duration="350000" />
+      <workItem from="1702607209138" duration="879000" />
+      <workItem from="1702690573077" duration="2467000" />
+      <workItem from="1702699660314" duration="175000" />
+      <workItem from="1702717075431" duration="1617000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -157,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702267287498</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feature: 分类列表接口">
+      <option name="closed" value="true" />
+      <created>1702349013899</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702349013899</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +181,7 @@
     <MESSAGE value="feature: 文章列表接口" />
     <MESSAGE value="feature: 标签列表接口" />
     <MESSAGE value="feature: 文章列表接口修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature: 文章列表接口修改" />
+    <MESSAGE value="feature: 分类列表接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: 分类列表接口" />
   </component>
 </project>
