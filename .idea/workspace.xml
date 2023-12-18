@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37537fe2-8a9a-4915-a298-778634166633" name="更改" comment="feature: 分类列表接口">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/exception/GlobalException.java" afterDir="false" />
+    <list default="true" id="37537fe2-8a9a-4915-a298-778634166633" name="更改" comment="feature: 修改">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/config/properties/OssConfigProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/constant/FieldConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/controller/UploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/entity/SystemConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/enums/FileUploadModelEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/mapper/SystemConfigMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/service/CloudOssService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/service/SystemConfigService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/service/impl/CloudOssServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/service/impl/SystemConfigServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/strategy/FileUploadStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/strategy/context/FileUploadStrategyContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/strategy/impl/AliUploadStrategyImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/utils/UUIDUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/exception/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/exception/BusinessException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,10 +29,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="AnnotationType" />
-        <option value="Interface" />
         <option value="spring-beans.schema" />
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -110,7 +121,9 @@
       <workItem from="1702607209138" duration="879000" />
       <workItem from="1702690573077" duration="2467000" />
       <workItem from="1702699660314" duration="175000" />
-      <workItem from="1702717075431" duration="1617000" />
+      <workItem from="1702717075431" duration="2910000" />
+      <workItem from="1702865450113" duration="4378000" />
+      <workItem from="1702890439076" duration="2733000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -168,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702349013899</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feature: 修改">
+      <option name="closed" value="true" />
+      <created>1702719971862</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702719971862</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +203,7 @@
     <MESSAGE value="feature: 标签列表接口" />
     <MESSAGE value="feature: 文章列表接口修改" />
     <MESSAGE value="feature: 分类列表接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature: 分类列表接口" />
+    <MESSAGE value="feature: 修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: 修改" />
   </component>
 </project>
