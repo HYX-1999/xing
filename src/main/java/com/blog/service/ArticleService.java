@@ -15,4 +15,9 @@ public interface ArticleService extends IService<Article> {
      */
     ResponseResult<Page<SystemArticleListVO>> selectArticleList(Map<String,Object> map);
 
+    /**
+     * 随机获取图片
+     */
+    ResponseResult<?> randomImg();
+
 }

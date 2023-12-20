@@ -14,9 +14,4 @@ public class BlogSpringbootApplication {
         SpringApplication.run(BlogSpringbootApplication.class, args);
     }
 
-    @Bean
-    public RestTemplate restTemplate() {
-        return new RestTemplate();
-    }
-
 }

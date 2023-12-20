@@ -4,18 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37537fe2-8a9a-4915-a298-778634166633" name="更改" comment="feature: OSS文件上传">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/enums/UploadModeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/strategy/impl/OssUploadStrategyImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/utils/FileUtils.java" afterDir="false" />
+    <list default="true" id="37537fe2-8a9a-4915-a298-778634166633" name="更改" comment="feature: OSS文件上传完善">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/config/RestTemplateConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/BlogSpringbootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/BlogSpringbootApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/constant/CommonConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/constant/CommonConstant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/controller/UploadController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/CloudOssService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/impl/CloudOssServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/strategy/FileUploadStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/strategy/UploadStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/strategy/context/FileUploadStrategyContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/strategy/context/UploadStrategyContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/strategy/impl/AliUploadStrategyImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/strategy/impl/AbstractUploadStrategyImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/service/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/service/impl/CategoryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +124,8 @@
       <workItem from="1702865450113" duration="4378000" />
       <workItem from="1702890439076" duration="4518000" />
       <workItem from="1702950575096" duration="8521000" />
-      <workItem from="1702976904446" duration="698000" />
+      <workItem from="1702976904446" duration="2366000" />
+      <workItem from="1703038180408" duration="5670000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -199,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702894201863</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feature: OSS文件上传完善">
+      <option name="closed" value="true" />
+      <created>1702980629192</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702980629192</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +223,7 @@
     <MESSAGE value="feature: 分类列表接口" />
     <MESSAGE value="feature: 修改" />
     <MESSAGE value="feature: OSS文件上传" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature: OSS文件上传" />
+    <MESSAGE value="feature: OSS文件上传完善" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: OSS文件上传完善" />
   </component>
 </project>

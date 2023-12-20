@@ -9,10 +9,7 @@ import com.blog.strategy.context.UploadStrategyContext;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
@@ -41,6 +38,12 @@ public class ArticleController {
     @PostMapping("/system/images")
     public ResponseResult<String> saveArticleImages(MultipartFile file) {
         return ResponseResult.ok(uploadStrategyContext.executeUploadStrategy(file, "article/"));
+    }
+
+    @GetMapping(value = "/system/randomImg")
+    @ApiOperation(value = "随机获取一张图片", httpMethod = "GET", response = ResponseResult.class, notes = "随机获取一张图片")
+    public ResponseResult<?> randomImg() {
+        return articleService.randomImg();
     }
 
 }
