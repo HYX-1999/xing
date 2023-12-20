@@ -10,4 +10,10 @@ public interface TagsService extends IService<Tags> {
 
     ResponseResult<Page<SystemTagListVO>> listTags(String name);
 
+    ResponseResult<?> insertTag(Tags tags);
+
+    ResponseResult<?> updateTag(Tags tags);
+
+    ResponseResult<?> deleteById(Long id);
+
 }
