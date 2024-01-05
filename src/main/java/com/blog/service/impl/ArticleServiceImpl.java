@@ -6,7 +6,9 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.blog.common.ResponseResult;
 import com.blog.entity.Article;
 import com.blog.mapper.ArticleMapper;
+import com.blog.mapper.TagsMapper;
 import com.blog.mapper.UserMapper;
+import com.blog.model.dto.ArticleDTO;
 import com.blog.model.vo.SystemArticleListVO;
 import com.blog.model.vo.SystemUserVO;
 import com.blog.service.ArticleService;
@@ -30,6 +32,9 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article> impl
     private UserMapper userMapper;
 
     @Resource
+    private TagsMapper tagsMapper;
+
+    @Resource
     private RestTemplate restTemplate;
 
     @Override
@@ -40,6 +45,13 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article> impl
             item.setNickname(userInfo.getNickname());
         });
         return ResponseResult.ok(data);
+    }
+
+    @Override
+    public ResponseResult<ArticleDTO> selectArticleById(Long id) {
+        ArticleDTO articleDTO = baseMapper.selectArticlePrimaryKey(id);
+        articleDTO.setTags(tagsMapper.selectByArticleId(id));
+        return ResponseResult.ok(articleDTO);
     }
 
     @Override

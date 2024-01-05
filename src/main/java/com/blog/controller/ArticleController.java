@@ -1,8 +1,10 @@
 package com.blog.controller;
 
 import cn.dev33.satoken.annotation.SaCheckLogin;
+import cn.dev33.satoken.annotation.SaCheckPermission;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.blog.common.ResponseResult;
+import com.blog.model.dto.ArticleDTO;
 import com.blog.model.vo.SystemArticleListVO;
 import com.blog.service.ArticleService;
 import com.blog.strategy.context.UploadStrategyContext;
@@ -31,6 +33,13 @@ public class ArticleController {
     @ApiOperation(value = "文章列表", httpMethod = "POST", response = ResponseResult.class, notes = "文章列表")
     public ResponseResult<Page<SystemArticleListVO>> selectArticleList(@RequestBody Map<String, Object> map) {
         return articleService.selectArticleList(map);
+    }
+
+    @GetMapping(value = "/system/info")
+    @SaCheckPermission("/article/system/info")
+    @ApiOperation(value = "文章详情", httpMethod = "GET", response = ResponseResult.class, notes = "文章详情")
+    public ResponseResult<ArticleDTO> selectArticleById(Long id) {
+        return articleService.selectArticleById(id);
     }
 
     @ApiOperation("上传文章图片")

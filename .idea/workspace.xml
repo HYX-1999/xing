@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37537fe2-8a9a-4915-a298-778634166633" name="更改" comment="feature: 分类模块">
+    <list default="true" id="37537fe2-8a9a-4915-a298-778634166633" name="更改" comment="feature: 标签模块">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/model/dto/ArticleDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/mapper/ArticleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/mapper/ArticleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/mapper/TagsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/mapper/TagsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/service/impl/ArticleServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ArticleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/TagsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/TagsMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +26,8 @@
       <list>
         <option value="AnnotationType" />
         <option value="spring-beans.schema" />
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -116,6 +125,13 @@
       <workItem from="1702950575096" duration="8521000" />
       <workItem from="1702976904446" duration="2366000" />
       <workItem from="1703038180408" duration="6452000" />
+      <workItem from="1703070271514" duration="921000" />
+      <workItem from="1703209873709" duration="3049000" />
+      <workItem from="1703754916688" duration="1391000" />
+      <workItem from="1703820132183" duration="1599000" />
+      <workItem from="1704161794573" duration="2381000" />
+      <workItem from="1704338656536" duration="850000" />
+      <workItem from="1704438506370" duration="3212000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -205,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703045144754</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feature: 标签模块">
+      <option name="closed" value="true" />
+      <created>1703071166187</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1703071166187</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +247,7 @@
     <MESSAGE value="feature: OSS文件上传" />
     <MESSAGE value="feature: OSS文件上传完善" />
     <MESSAGE value="feature: 分类模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature: 分类模块" />
+    <MESSAGE value="feature: 标签模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: 标签模块" />
   </component>
 </project>

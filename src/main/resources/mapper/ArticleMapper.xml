@@ -31,4 +31,26 @@
         </where>
         GROUP BY a.id order by a.is_stick desc ,a.create_time desc
     </select>
+
+    <select id="selectArticlePrimaryKey" resultType="com.blog.model.dto.ArticleDTO">
+        select a.id,
+               a.title,
+               a.avatar,
+               a.summary,
+               a.quantity,
+               a.content,
+               a.content_md,
+               a.read_type,
+               a.is_stick,
+               a.is_publish,
+               a.is_original,
+               a.original_url,
+               a.create_time,
+               a.category_id,
+               a.is_carousel,
+               a.keywords,
+               a.is_recommend
+        from b_article a
+        where a.id = #{id}
+    </select>
 </mapper>
