@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37537fe2-8a9a-4915-a298-778634166633" name="更改" comment="feature: 标签模块">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/model/dto/ArticleDTO.java" afterDir="false" />
+    <list default="true" id="37537fe2-8a9a-4915-a298-778634166633" name="更改" comment="feature: 文章详情">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/utils/BeanCopyUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/mapper/ArticleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/mapper/ArticleMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/mapper/TagsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/mapper/TagsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/model/dto/ArticleDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/model/dto/ArticleDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/model/vo/SystemArticleListVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/model/vo/SystemArticleListVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/service/ArticleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/service/impl/ArticleServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
@@ -131,7 +132,9 @@
       <workItem from="1703820132183" duration="1599000" />
       <workItem from="1704161794573" duration="2381000" />
       <workItem from="1704338656536" duration="850000" />
-      <workItem from="1704438506370" duration="3212000" />
+      <workItem from="1704438506370" duration="3339000" />
+      <workItem from="1704684018918" duration="1340000" />
+      <workItem from="1704765234631" duration="6900000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -229,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703071166187</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feature: 文章详情">
+      <option name="closed" value="true" />
+      <created>1704457721619</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1704457721619</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +259,7 @@
     <MESSAGE value="feature: OSS文件上传完善" />
     <MESSAGE value="feature: 分类模块" />
     <MESSAGE value="feature: 标签模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature: 标签模块" />
+    <MESSAGE value="feature: 文章详情" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: 文章详情" />
   </component>
 </project>

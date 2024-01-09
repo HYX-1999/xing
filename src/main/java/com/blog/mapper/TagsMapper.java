@@ -13,11 +13,21 @@ import java.util.List;
 public interface TagsMapper extends BaseMapper<Tags> {
 
     /**
+     * 添加标签
+     */
+    void saveArticleTags(@Param("articleId") Long articleId, @Param("tags")List<Long> tags);
+
+    /**
+     * 根据id删除文章对应中间表数据
+     */
+    void deleteByArticleIds(@Param("ids") List<Long> ids);
+
+    /**
      * 分页获取标签
      */
     Page<SystemTagListVO> selectPageRecord(@Param("page") Page<Tags> objectPage, @Param("name") String name);
 
-    List<Integer> selectByArticleId(Long articleId);
+    List<Long> selectByArticleId(Long articleId);
 
     /**
      * 校验此标签是否存在文章关联

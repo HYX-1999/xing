@@ -44,10 +44,10 @@ public class SystemArticleListVO {
     @ApiModelProperty(value = "状态")
     private Integer isPublish;
 
-    @ApiModelProperty(value = "分类名")
-    private String categoryName;
+    @ApiModelProperty(value = "分类ID")
+    private Integer categoryId;
 
-    @ApiModelProperty(value = "标签名集合")
-    private String tagNames;
+    @ApiModelProperty(value = "标签ID集合")
+    private String tagIds;
 
 }

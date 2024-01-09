@@ -17,6 +17,16 @@ public interface ArticleService extends IService<Article> {
     ResponseResult<Page<SystemArticleListVO>> selectArticleList(Map<String,Object> map);
 
     /**
+     * 添加文章
+     */
+    ResponseResult<?> insertArticle(ArticleDTO article);
+
+    /**
+     * 修改文章
+     */
+    ResponseResult<?> updateArticle(ArticleDTO article);
+
+    /**
      * 后台根据主键获取文章详情
      */
     ResponseResult<ArticleDTO> selectArticleById(Long id);

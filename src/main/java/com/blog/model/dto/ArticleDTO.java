@@ -28,14 +28,14 @@ public class ArticleDTO {
     private Integer isStick;
     private Integer isOriginal;
     private String originalUrl;
-    private Integer categoryId;
+    private Long categoryId;
     private Integer isPublish;
 
     private Integer isCarousel;
 
     private Integer isRecommend;
 
-    private List<Integer> tags;
+    private List<Long> tags;
 
     @TableField(fill = FieldFill.INSERT)
     @JsonFormat(pattern = DateUtils.FORMAT_STRING,timezone="GMT+8")

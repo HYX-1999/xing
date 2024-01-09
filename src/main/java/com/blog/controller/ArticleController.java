@@ -3,6 +3,7 @@ package com.blog.controller;
 import cn.dev33.satoken.annotation.SaCheckLogin;
 import cn.dev33.satoken.annotation.SaCheckPermission;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.blog.annotation.OperationLogger;
 import com.blog.common.ResponseResult;
 import com.blog.model.dto.ArticleDTO;
 import com.blog.model.vo.SystemArticleListVO;
@@ -40,6 +41,22 @@ public class ArticleController {
     @ApiOperation(value = "文章详情", httpMethod = "GET", response = ResponseResult.class, notes = "文章详情")
     public ResponseResult<ArticleDTO> selectArticleById(Long id) {
         return articleService.selectArticleById(id);
+    }
+
+    @PostMapping(value = "/system/add")
+    @SaCheckPermission("/article/system/add")
+    @ApiOperation(value = "保存文章", httpMethod = "POST", response = ResponseResult.class, notes = "保存文章")
+    @OperationLogger(value = "保存文章")
+    public ResponseResult<?> insertArticle(@RequestBody ArticleDTO article) {
+        return  articleService.insertArticle(article);
+    }
+
+    @PostMapping(value = "/system/update")
+    @SaCheckPermission("/article/system/update")
+    @ApiOperation(value = "修改文章", httpMethod = "POST", response = ResponseResult.class, notes = "修改文章")
+    @OperationLogger(value = "修改文章")
+    public ResponseResult<?> updateArticle(@RequestBody ArticleDTO article) {
+        return articleService.updateArticle(article);
     }
 
     @ApiOperation("上传文章图片")

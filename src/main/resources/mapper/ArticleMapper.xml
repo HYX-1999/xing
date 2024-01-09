@@ -5,13 +5,10 @@
     <select id="selectArticle" resultType="com.blog.model.vo.SystemArticleListVO">
         SELECT
         a.*,
-        b.NAME AS categoryName,
-        group_concat( t.NAME SEPARATOR ',' ) AS tagNames
+        group_concat( atg.tag_id SEPARATOR ',' ) AS tagIds
         FROM
         b_article a
-        JOIN b_category b ON a.category_id = b.id
         JOIN b_article_tag atg ON a.id = atg.article_id
-        JOIN b_tags t ON atg.tag_id = t.id
         <where>
             <if test="param.userId != null and param.userId != ''">
                 a.user_id =#{param.userId}
